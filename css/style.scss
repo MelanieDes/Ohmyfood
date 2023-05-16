@@ -1,0 +1,29 @@
+/* GENERAL */
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    height: 63px;
+
+    &-logo {
+        width: 162px;
+        height: 35px;
+    }
+}
+
+/* MAIN */
+.search {
+    display: flex;
+    justify-content: center;
+
+    &-container {
+        border: none;
+    }
+}
+
+.title-slogan-container {
+    display: flex;
+    justify-content: center;
+}
+

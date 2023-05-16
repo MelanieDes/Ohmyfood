@@ -11,3 +11,18 @@
     width: 162px;
     height: 35px;
 }
+
+/* MAIN */
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    border: none;
+  }
+
+.title-slogan-container {
+    display: flex;
+    justify-content: center;
+}
