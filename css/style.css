@@ -1,0 +1,13 @@
+/* GENERAL */
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    height: 63px;
+}
+
+.header-logo {
+    width: 162px;
+    height: 35px;
+}
