@@ -18,8 +18,9 @@ p {
 }
 
 h2 {
-    padding-top: 30px;
     color: var(--main-color);
+    padding-top: 50px;
+    margin: 0 0 0 20px;
 }
 
 .flex-center{
@@ -104,34 +105,57 @@ h2 {
 button {
     width: 218px;
     height: 50px;
+    font-size: 16px;
+    font-weight: 500;
     color: white;
+    box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.27);
     border: none;
     background: var(--main-gradient-color);
     border-radius: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 /* MAIN - FUNCTIONING */
 .functioning {
-    display: flex;
-    flex-direction: column; 
+    padding-bottom: 40px;
 }
 
 .functioning-btn {
     width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 70px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.15));
-    box-shadow: 0 4px black;
+    box-shadow: 0px 10px 19px 0px rgba(0,0,0,0.14);
     background-color: var(--main-bg-color);
     border-radius: 20px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.functioning-btn i {
+    margin-right: 20px;
+    color: #7E7E7E;
+    margin-bottom: 5px;
+}
+
+.functioning-btn i:hover {
+    color: #9356DC;
+}
+
+.functioning-nbr {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    display: flex;
+    position: absolute;
+    margin-right: 100%;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 25px;
 }
 
 .functioning-txt {
-    display: flex;
-    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 30px;
 }
 
 /* MAIN - CARD */
@@ -142,11 +166,13 @@ button {
 
 .card {
     display: flex;
-    width: 100%;    
+    width: 100%;   
+    margin-left: 20px; 
+    margin-right: 20px;
 }
 
 .card img {
-    width: 346px;
+    width: 90%;
     height: 180px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
