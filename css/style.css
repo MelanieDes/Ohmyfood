@@ -199,8 +199,8 @@ button {
 .card-icone {
     width: 22px;
     height: 21px;
-    margin: 10px 20px 0 0;
-    border: none;
+    margin: 30px 30px 0 0;
+    
 }
 
 /*
@@ -215,10 +215,40 @@ button {
 .footer {
     background-color: #353535;
     color: white;
+    height: 100%;
 }
 
 .footer-title {
     font-family: 'shrikhand', sans serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    padding-top: 30px;
 }
+
+.footer-link {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-selection {
+    margin: 10px 0 5px 20px;    
+}
+
+.footer-txt {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 0 10px;
+    align-items: center;
+}
+
+.footer-list {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 
 
