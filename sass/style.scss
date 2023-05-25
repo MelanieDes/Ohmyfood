@@ -1,4 +1,4 @@
-@import 'style-page.css';
+@import 'style-page.scss';
 /* GENERAL */
 :root {
     --main-color: #000000;
@@ -48,34 +48,32 @@ h3 {
 .header {
     display: flex;
     justify-content: center;
-    height: 63px;    
-}
-
-.header-logo {
-    width: 162px;
-    height: 35px;
-    padding-top: 10px;
+    height: 63px; 
+    &-logo {
+        width: 162px;
+        height: 35px;
+        padding-top: 10px;
+    }    
 }
 
 /* MAIN - SEARCH */
 .search {
     display: flex;
     justify-content: center;
-    background-color: #EAEAEA;    
+    background-color: #EAEAEA;  
+    &-container {
+        border: none;
+        background-color: #EAEAEA;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 500;
+      }  
 }
 
 #search-icone {
     margin-left: 40px;
     margin-right: 20px;
 }
-
-.search-container {
-    border: none;
-    background-color: #EAEAEA;
-    height: 50px;
-    font-size: 16px;
-    font-weight: 500;
-  }
 
 /* MAIN - TITLE */  
 
@@ -84,27 +82,25 @@ h3 {
     justify-content: center;
     flex-direction: column;
     background-color: var(--main-bg-color);
-}
+    &-container {
+        font-size: 24px;
+        text-align: center;
+        margin: 30px 20px 20px 20px;
+    }
 
-.title-container {
-    font-size: 24px;
-    text-align: center;
-    margin: 30px 20px 20px 20px;
-}
+    &-txt {
+        font-size: 18px;
+        color: #353535;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;    
+    }
 
-.title-txt {
-    font-size: 18px;
-    color: #353535;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
-
-}
-
-.title-btn {
-    display: flex;
-    justify-content: center;
-    width: 100%;    
+    &-btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;    
+    }
 }
 
 button {
@@ -119,6 +115,7 @@ button {
     border-radius: 25px;
     margin-bottom: 50px;
 }
+
 /* MAIN - FUNCTIONING */
 .functioning {
     padding-bottom: 40px;
@@ -132,34 +129,30 @@ button {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     margin: 30px 20px 0 25px;
-}
-
-.functioning-btn i {
-    margin-right: 20px;
-    color: #7E7E7E;
-    margin-bottom: 5px;
-}
-
-.functioning-btn i:hover {
-    color: #9356DC;
-}
-
-.functioning-nbr {
-    width: 24px;
-    height: 24px;
-    font-size: 14px;
-    display: flex;
-    position: absolute;
-    margin-right: 100%;
-    color: white;
-    background-color: #9356DC;
-    border-radius: 25px;
-}
-
-.functioning-txt {
-    font-size: 16px;
-    font-weight: 500;
-    margin-right: 30px;
+    &-nbr {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+        display: flex;
+        position: absolute;
+        margin-right: 100%;
+        color: white;
+        background-color: #9356DC;
+        border-radius: 25px;
+    }
+    &-btn i {
+        margin-right: 20px;
+        color: #7E7E7E;
+        margin-bottom: 5px;
+        &:hover {
+            color: #9356DC;
+        }
+    }
+    &-txt {
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 30px;
+    }
 }
 
 /* MAIN - CARD */
