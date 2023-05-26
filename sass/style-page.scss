@@ -17,8 +17,9 @@ a {
 .menu-container {
     background: #F6F6F6;
     border-radius: 50px;
-    z-index: 1;
-    margin-top: -20px;
+    overflow: visible;
+    padding-top: 50px;
+
 }
 
 .menu-first-title {
