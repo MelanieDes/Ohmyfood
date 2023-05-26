@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass sass/style.scss css/exportstyle.css -w",
-    "sass": "node-sass sass/style-page.scss css/exportstyle-page.css -w"
+    "sass": "node-sass sass/style.scss css/exportstyle.css -w"
   },
   "author": "",
   "license": "ISC",
