@@ -8,6 +8,11 @@ a {
   color: black; }
 
 /* MAIN */
+.img-container {
+  position: relative;
+  height: 200px;
+  z-index: -1; }
+
 .img-container img {
   width: 100%; }
 
@@ -88,6 +93,14 @@ h3 {
 .flex-column {
   display: flex;
   flex-direction: column; }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  width: 200px;
+  height: 20px;
+  border-radius: 20px; }
 
 /* HEADER */
 .header {

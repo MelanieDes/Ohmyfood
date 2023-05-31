@@ -12,6 +12,12 @@ a {
 
 /* MAIN */
 
+.img-container {
+    position: relative;
+    height: 200px;
+    z-index: -1;
+}
+
 
 .img-container img{
     width: 100%;    
