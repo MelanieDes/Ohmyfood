@@ -11,22 +11,58 @@ a {
 }
 
 /* MAIN */
-.img-container {
-    z-index: 0;
-}
+
 
 .img-container img{
-    width: 100%;
+    width: 100%;    
 }
 
 .menu-container {
     background: #F6F6F6;
     border-radius: 50px;
-    z-index: 1;
-    margin-top: -20px;
+    padding-top: 20px;       
+}
+
+.menu-container-section {
+    margin-bottom: 20px;
+}
+
+.menu-first-title {
+    margin-left: 20px;
 }
 
 .menu-second-title {
     font-size: 16px;
     font-weight: 300;
+    padding-top: 20px;
+}
+
+.blue-line {
+    width: 40px;
+    border-bottom: 2px solid aquamarine;
+    margin: 5px 0 5px 20px;
+}
+
+.card-menu {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 10px 0 10px;    
+}
+
+.card-menu-txt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px!important;
+}
+
+.card-menu-txt-desc {
+    margin-top: 0;
+}
+
+.title-btn {
+    margin-top: 40px;
 }
