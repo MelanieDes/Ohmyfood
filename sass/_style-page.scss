@@ -55,7 +55,63 @@ a {
     border-radius: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 20px 10px 0 10px;    
+    margin: 20px 10px 0 10px;   
+}
+
+#recette1_1 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 2s forwards;
+}
+
+#recette1_2 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 3s forwards;
+}
+
+#recette1_3 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 4s forwards;
+}
+
+#recette2_1 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 5s forwards;
+}
+
+#recette2_2 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 6s forwards;
+}
+
+#recette2_3 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 7s forwards;
+}
+
+#recette3_1 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 8s forwards;
+}
+
+#recette3_2 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 9s forwards;
+}
+
+#recette3_3 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 10s forwards;
+}
+
+@keyframes transition {
+    0%{
+        margin-left: -100px;
+        opacity: 1;
+    }
+    100%{
+        margin-left: 0;
+        opacity: 1;
+    }
 }
 
 .card-menu-txt {

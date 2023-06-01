@@ -268,7 +268,7 @@ button {
 
 .heart-color {
   opacity: 0;
-  color: #9356dc;
+  color: var(--main-btn-color);
   position: absolute;
   width: 22px;
   height: 21px;
