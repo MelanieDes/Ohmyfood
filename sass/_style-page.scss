@@ -12,6 +12,16 @@ a {
 
 /* MAIN */
 
+.arrow-left {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+
 .img-container {
     position: relative;
     height: 200px;

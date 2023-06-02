@@ -8,6 +8,14 @@ a {
   color: black; }
 
 /* MAIN */
+.arrow-left {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 50px; }
+
 .img-container {
   position: relative;
   height: 200px;
@@ -189,11 +197,11 @@ h3 {
 
 /* HEADER */
 .header {
+  display: flex;
+  justify-content: center;
   height: 63px; }
 
 .header-logo {
-  display: flex;
-  justify-content: center;
   width: 162px;
   height: 35px;
   padding-top: 10px; }
