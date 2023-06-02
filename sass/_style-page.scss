@@ -1,7 +1,7 @@
 /* GENERAL */
 
 .menu-first-title {
-    font-family: 'shrikhand', sans serif;
+    font-family: 'shrikhand', 'sans serif';
     font-size: 28px;
 }
 
@@ -44,7 +44,7 @@ a {
 
 .blue-line {
     width: 40px;
-    border-bottom: 2px solid aquamarine;
+    border-bottom: 2px solid var(--main-third-color);
     margin: 5px 0 5px 20px;
 }
 
@@ -73,34 +73,39 @@ a {
     animation: transition 1s ease-in-out 4s forwards;
 }
 
-#recette2_1 {
+#recette1_4 {
     opacity: 0;
     animation: transition 1s ease-in-out 5s forwards;
 }
 
-#recette2_2 {
+#recette2_1 {
     opacity: 0;
     animation: transition 1s ease-in-out 6s forwards;
 }
 
-#recette2_3 {
+#recette2_2 {
     opacity: 0;
     animation: transition 1s ease-in-out 7s forwards;
 }
 
-#recette3_1 {
+#recette2_3 {
     opacity: 0;
     animation: transition 1s ease-in-out 8s forwards;
 }
 
-#recette3_2 {
+#recette3_1 {
     opacity: 0;
     animation: transition 1s ease-in-out 9s forwards;
 }
 
-#recette3_3 {
+#recette3_2 {
     opacity: 0;
     animation: transition 1s ease-in-out 10s forwards;
+}
+
+#recette3_3 {
+    opacity: 0;
+    animation: transition 1s ease-in-out 11s forwards;
 }
 
 @keyframes transition {
@@ -122,6 +127,15 @@ a {
 
 .card-menu-txt-desc {
     margin-top: 0;
+}
+
+.checkbox-container {    
+    width: 59px;
+    height: 95px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--main-third-color);
+    
 }
 
 .title-btn {
