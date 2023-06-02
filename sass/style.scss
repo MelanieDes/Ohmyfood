@@ -1,3 +1,4 @@
+@import "style-header";
 @import "style-page";
 @import "style-footer";
 
@@ -107,17 +108,7 @@ h3 {
 
 
 /* HEADER */
-.header {  
-  display: flex;
-  justify-content: center;
-  height: 63px; 
-}
 
-.header-logo {  
-  width: 162px;
-  height: 35px;
-  padding-top: 10px; 
-}
 
 /* MAIN - SEARCH */
 .search {

@@ -1,3 +1,13 @@
+.header {
+  display: flex;
+  justify-content: center;
+  height: 63px; }
+
+.header-logo {
+  width: 162px;
+  height: 35px;
+  padding-top: 10px; }
+
 /* GENERAL */
 .menu-first-title {
   font-family: 'shrikhand', 'sans serif';
@@ -238,16 +248,6 @@ h3 {
     opacity: 0; } }
 
 /* HEADER */
-.header {
-  display: flex;
-  justify-content: center;
-  height: 63px; }
-
-.header-logo {
-  width: 162px;
-  height: 35px;
-  padding-top: 10px; }
-
 /* MAIN - SEARCH */
 .search {
   display: flex;
