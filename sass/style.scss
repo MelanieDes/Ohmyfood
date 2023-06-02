@@ -1,4 +1,7 @@
 @import "style-page";
+@import "style-footer";
+
+
 /* GENERAL */
 :root {
   --main-color: #000000;
@@ -56,15 +59,19 @@ h3 {
   position: fixed;
   inset: 0;
   background: white;
+  animation: hidden 3s linear;
+  animation-delay: 3s;
+  animation-fill-mode: forwards; 
+  pointer-events: none;
   width: 100%;
   height: 100%;
   z-index: 10;
   &-object {
     color: var(--main-bg-color);
     background: var(--main-linear-gradient);
-    background-size: 200%;
+    background-size: 100%;
     border-radius: 50px;
-    width: 180px;
+    width: 100px;
     height: 20px;
     animation: spin 3s linear infinite;
     transform-origin: 0 0;
@@ -85,6 +92,16 @@ h3 {
   100% {
     transform: rotate(360deg);
     background-position: 0 50%;
+  }
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    
   }
 }
 
@@ -298,44 +315,7 @@ button {
   }
 }
 
-/* FOOTER */
-.footer {
-  background-color: #353535;
-  color: white;
-  height: 100%; 
-}
 
-.footer-title {
-  font-family: 'shrikhand', 'sans serif';
-  font-size: 18px;
-  font-weight: 300;
-  color: white;
-  margin-bottom: 20px;
-  padding-top: 30px; 
-}
-
-.footer-link {
-  margin-top: 10px;
-  padding-bottom: 20px; 
-}
-
-.footer-selection {
-  margin: 10px 0 5px 20px; 
-}
-
-.footer-txt {
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0 0 0 10px; 
-}
-
-.footer-list {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 500; 
-}
 
 @media all and (min-width: 768px) and (max-width:1023) {
   
