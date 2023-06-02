@@ -10,7 +10,10 @@
         <title>ohmyfood</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header flex-row flex-center">
+            <div class="arrow_left flex-center">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
             <img class="header-logo" src="images/logo/ohmyfood.png" alt="Image du logo">        
         </header>
         <main>
@@ -19,6 +22,10 @@
             </section>
             <div class="menu-container">
                 <section class="menu-container-section">
+                    <div class="card-icone">
+                        <i class="fa-regular fa-heart fa-xl heart-border"></i>
+                        <i class="fa-solid fa-heart fa-xl heart-color"></i>
+                    </div>
                     <h1 class="menu-first-title">La palette du goût</h1>
                     <h2 class="menu-second-title">ENTRÉES</h2>
                     <div class="blue-line"></div>
@@ -30,9 +37,9 @@
                                 <p class="card-menu-txt-desc"><strong>25€</strong></p>
                             </div>                            
                         </div> 
-                        <div class="checkbox-container flex-center">
+                        <!--<div class="checkbox-container flex-center">
                             <input type="checkbox" name="selection">
-                        </div>                       
+                        </div>     -->                  
                     </a>
                     <a href="#">
                         <div id="recette1_2" class="card-menu flex-column">
@@ -134,7 +141,7 @@
                 </div>
                 <div class="flex-column">
                     <a class="footer-selection footer-list" href="#">Mentions légales</a>
-                    <a class="footer-selection footer-list" href="#">Contact</a>
+                    <a class="footer-selection footer-list" href="mailto:contact@ohmyfood.fr?subject=Contact%20depuis%20ohmyfood&body=Veuillez%20écrire%20votre%20message%20ici">Contact</a>
                 </div>  
             </div>
         </footer>
