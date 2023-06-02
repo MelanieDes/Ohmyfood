@@ -72,6 +72,7 @@ h3 {
     color: var(--main-bg-color);
     background: var(--main-linear-gradient);
     background-size: 100%;
+    font-size: 12px;
     border-radius: 50px;
     width: 120px;
     height: 20px;
@@ -79,6 +80,7 @@ h3 {
     transform-origin: 0 0;
     margin-left: 120px; 
     padding-left: 20px; 
+    padding-top: 10px;
   }
 }
 

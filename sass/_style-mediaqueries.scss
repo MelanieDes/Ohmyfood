@@ -55,8 +55,9 @@
       flex-direction: row;      
     }
   
-    .card {
-      width: 50%;
+   .card {
+      display: block;
+      width: 100%;
     }
   
     .card-container {
@@ -72,8 +73,7 @@
         flex-direction: row;
         align-items: center;      
       }
-    }
-  
+    }  
   
     .footer-link-selection {
       display: flex;
