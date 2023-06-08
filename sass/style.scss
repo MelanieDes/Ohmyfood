@@ -39,6 +39,7 @@ h2 {
 }
 
 h3 {
+  width: 100%;
   margin-bottom: 0; 
 }
 
@@ -75,6 +76,7 @@ h3 {
   z-index: 3;
   &-object {
     color: var(--main-bg-color);
+    text-align: center;
     background: var(--main-linear-gradient);
     background-size: 100%;
     font-size: 12px;
@@ -84,7 +86,6 @@ h3 {
     animation: spin 2s linear infinite;
     transform-origin: 0 0;
     margin-left: 120px; 
-    padding-left: 20px; 
     padding-top: 10px;
   }
 }

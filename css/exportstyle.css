@@ -93,6 +93,10 @@
     opacity: 0; }
 
 /* GENERAL */
+.title-container {
+  display: flex;
+  width: 100%; }
+
 .menu-first-title {
   font-family: 'shrikhand', 'sans serif';
   font-size: 28px; }
@@ -116,7 +120,9 @@ a {
   z-index: -1; }
 
 .img-container img {
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  z-index: -1; }
 
 .menu-container {
   background: #F6F6F6;
@@ -141,12 +147,59 @@ a {
 
 .card-menu {
   display: flex;
-  justify-content: center;
+  position: relative;
   background-color: white;
   border-radius: 15px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 20px 10px 0 10px; }
+  margin: 20px 10px 0 10px;
+  cursor: pointer; }
+
+.card-menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px !important; }
+
+.card-menu-txt-desc {
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.checkbox-container {
+  width: 80px;
+  height: 100%;
+  right: -80px;
+  position: absolute;
+  font-size: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #f6f6f6;
+  background-color: var(--main-third-color);
+  visibility: hidden;
+  overflow: hidden;
+  transition: right 1s, transform 1s;
+  white-space: nowrap; }
+
+.card-menu:hover .checkbox-container {
+  right: 80px;
+  visibility: visible;
+  overflow: visible;
+  transform: translateX(80px); }
+
+.card-menu-txt-price {
+  position: absolute;
+  right: 20px;
+  transition: right 1s, transform 1s;
+  white-space: nowrap; }
+
+.card-menu:hover .card-menu-txt-price {
+  right: 20px;
+  transform: translateX(-80px); }
+
+.title-btn {
+  margin-top: 40px; }
 
 #recette1_1 {
   opacity: 0;
@@ -193,26 +246,9 @@ a {
     margin-left: -100px;
     opacity: 1; }
   100% {
-    margin-left: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     opacity: 1; } }
-
-.card-menu-txt {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px !important; }
-
-.card-menu-txt-desc {
-  margin-top: 0; }
-
-.checkbox-container {
-  width: 59px;
-  height: 95px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: var(--main-third-color); }
-
-.title-btn {
-  margin-top: 40px; }
 
 .footer {
   background-color: #353535;
@@ -256,7 +292,6 @@ a {
     flex-direction: row; }
   .functioning-btn i {
     margin: 0 30px 5px 30px !important; }
-  /* CARD */
   .card-container-title {
     margin-left: 50px; }
   .card-container-flex {
@@ -268,7 +303,6 @@ a {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px; }
-  /* FOOTER */
   .footer {
     display: flex;
     height: 100px;
@@ -340,6 +374,7 @@ h2 {
   margin: 0 0 0 20px; }
 
 h3 {
+  width: 100%;
   margin-bottom: 0; }
 
 .flex-center {
@@ -372,6 +407,7 @@ h3 {
   z-index: 3; }
   .loader-object {
     color: var(--main-bg-color);
+    text-align: center;
     background: var(--main-linear-gradient);
     background-size: 100%;
     font-size: 12px;
@@ -381,7 +417,6 @@ h3 {
     animation: spin 2s linear infinite;
     transform-origin: 0 0;
     margin-left: 120px;
-    padding-left: 20px;
     padding-top: 10px; }
 
 @keyframes spin {
