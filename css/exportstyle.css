@@ -162,10 +162,15 @@ a {
   align-items: center;
   margin-top: 10px !important; }
 
-.card-menu-txt-desc {
-  margin-top: 0;
+.card-menu-txt {
+  width: 100%;
+  margin-top: 0; }
+
+.card-menu-txt:hover .card-menu-txt-desc {
+  width: 70%;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .checkbox-container {
   width: 80px;
@@ -191,6 +196,9 @@ a {
 .card-menu-txt-price {
   position: absolute;
   right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
   transition: right 1s, transform 1s;
   white-space: nowrap; }
 
