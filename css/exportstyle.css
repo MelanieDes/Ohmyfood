@@ -80,7 +80,8 @@
   width: 25px;
   height: 25px; }
   .heart-color:hover {
-    opacity: 1; }
+    opacity: 1;
+    transition: all 0.3s linear 0s; }
 
 .heart-border {
   opacity: 1;
@@ -311,6 +312,13 @@ a {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px; }
+  .title-container {
+    display: flex;
+    justify-content: center; }
+  .card-icone {
+    display: flex;
+    width: 100px;
+    justify-content: center; }
   .footer {
     display: flex;
     height: 100px;
