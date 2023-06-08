@@ -346,7 +346,9 @@ a {
     color: #7E7E7E; }
   /* CARD */
   .menu-container {
-    margin: 100px 100px 0 100px;
+    margin: 100px 80px 0 80px;
+    padding-left: 80px;
+    padding-right: 80px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
   .img-container {
@@ -359,6 +361,14 @@ a {
   .footer {
     justify-content: right;
     padding-right: 20px; } }
+
+@media all and (min-width: 1280px) {
+  .menu-container {
+    margin: 100px 80px 0 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; } }
 
 /* GENERAL */
 :root {
