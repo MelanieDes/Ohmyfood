@@ -106,14 +106,16 @@ a {
     border-bottom-right-radius: 20px;
     color: #f6f6f6;
     background-color: var(--main-third-color);
-    opacity: 0;
-    transition: right 1s;
+    visibility: hidden;
+    overflow: hidden;
+    transition: right 1s, transform 1s;
     white-space: nowrap;    
 }
 
 .card-menu:hover .checkbox-container { 
     right: 80px;
-    opacity: 1;
+    visibility: visible;
+    overflow: visible;
     transform: translateX(80px);    
 }
 
