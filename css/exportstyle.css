@@ -1,3 +1,13 @@
+
+  :root {
+  --main-bg-color: #F6F6F6;
+  --main-first-color: #9356DC;
+  --main-second-color: #FF79DA;
+  --main-third-color: #99E2D0;
+  --main-linear-gradient: linear-gradient(30deg, #9356DC 20%, #FF79DA, #99E2D0 80%);
+  --main-btn-color: linear-gradient(#FF79DA, #9356DC);
+  --main-btn-color-hover: linear-gradient(rgb(255, 121, 218, 0.9), rgb(147, 86, 220, 0.9));}
+
 .header {
   display: flex;
   justify-content: center;
@@ -153,7 +163,8 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   margin: 20px 10px 0 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  overflow: hidden; }
 
 .card-menu-container {
   width: 100%;
@@ -166,7 +177,7 @@ a {
   width: 100%;
   margin-top: 0; }
 
-.card-menu-txt:hover .card-menu-txt-desc {
+.card-menu-txt .card-menu-txt-desc {
   width: 60%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -182,8 +193,6 @@ a {
   border-bottom-right-radius: 20px;
   color: #f6f6f6;
   background-color: var(--main-third-color);
-  visibility: hidden;
-  overflow: hidden;
   transition: right 1s, transform 1s;
   white-space: nowrap; }
 
@@ -370,15 +379,6 @@ a {
     border-bottom-left-radius: 0; } }
 
 /* GENERAL */
-:root {
-  --main-color: #000000;
-  --main-bg-color: #F6F6F6;
-  --main-first-color: #9356DC;
-  --main-second-color: #FF79DA;
-  --main-third-color: #99E2D0;
-  --main-linear-gradient: linear-gradient(30deg, #9356DC 20%, #FF79DA, #99E2D0 80%);
-  --main-btn-color: linear-gradient(#FF79DA, #9356DC);
-  --main-btn-color-hover: linear-gradient(rgb(255, 121, 218, 0.9), rgb(147, 86, 220, 0.9)); }
 
 html, body {
   width: 100%; }
@@ -391,10 +391,10 @@ body {
 p {
   font-size: 17px;
   font-weight: 300;
-  color: var(--main-color); }
+  color: #000000; }
 
 h2 {
-  color: var(--main-color);
+  color: #000000;
   padding-top: 50px;
   margin: 0 0 0 20px; }
 
@@ -505,7 +505,7 @@ button {
   width: 218px;
   height: 50px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   color: white;
   box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.27);
   border: none;
@@ -529,7 +529,8 @@ button:hover {
   box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.14);
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  margin: 30px 20px 0 25px; }
+  margin: 30px 20px 0 25px;
+  cursor: pointer; }
 
 .functioning-btn i {
   display: flex;
