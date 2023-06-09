@@ -182,15 +182,13 @@ a {
   border-bottom-right-radius: 20px;
   color: #f6f6f6;
   background-color: var(--main-third-color);
-  visibility: hidden;
-  overflow: hidden;
-  transition: right 1s, transform 1s;
+  opacity: 0;
+  transition: right 1s;
   white-space: nowrap; }
 
 .card-menu:hover .checkbox-container {
   right: 80px;
-  visibility: visible;
-  overflow: visible;
+  opacity: 1;
   transform: translateX(80px); }
 
 .card-menu-txt-price {
@@ -370,16 +368,6 @@ a {
     border-bottom-left-radius: 0; } }
 
 /* GENERAL */
-:root {
-  --main-color: #000000;
-  --main-bg-color: #F6F6F6;
-  --main-first-color: #9356DC;
-  --main-second-color: #FF79DA;
-  --main-third-color: #99E2D0;
-  --main-linear-gradient: linear-gradient(30deg, #9356DC 20%, #FF79DA, #99E2D0 80%);
-  --main-btn-color: linear-gradient(#FF79DA, #9356DC);
-  --main-btn-color-hover: linear-gradient(rgb(255, 121, 218, 0.9), rgb(147, 86, 220, 0.9)); }
-
 html, body {
   width: 100%; }
 
