@@ -90,7 +90,7 @@ a {
 }
 
 .card-menu-txt:hover .card-menu-txt-desc {
-    width: 70%;    
+    width: 60%;    
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -109,8 +109,7 @@ a {
     visibility: hidden;
     overflow: hidden;
     transition: right 1s, transform 1s;
-    white-space: nowrap;
-    
+    white-space: nowrap;    
 }
 
 .card-menu:hover .checkbox-container { 

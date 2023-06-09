@@ -28,12 +28,10 @@
   }
 
   .card-container-news {
-    width: 100%;
     position: absolute;
-    display: flex;
-    justify-content: end;
+    right: 0;
     padding-top: 30px;
-      
+    padding-right: 20px;      
   }
   
   .card-news {
@@ -57,7 +55,7 @@
     margin-top: 5px; }
   
   .card-icone {  
-    width: 30%; 
+    width: 20%; 
     display: flex;
     justify-content: flex-end;
     align-items: center;
