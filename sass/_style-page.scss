@@ -90,9 +90,8 @@ a {
     margin-top: 0;
 }
 
-.card-menu-txt .card-menu-txt-desc {
+.card-menu-txt:hover {
     width: 60%;
-
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
