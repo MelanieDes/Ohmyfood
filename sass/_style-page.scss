@@ -90,10 +90,10 @@ a {
     margin-top: 0;
 }
 
-.card-menu-container :hover {
-    width: 60%;
+.card-menu-container:hover {
+    // width: 60%;
     overflow: hidden;
-    // text-overflow: ellipsis;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
