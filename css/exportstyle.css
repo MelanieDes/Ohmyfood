@@ -77,7 +77,8 @@
   transition: all;
   font-size: 25px;
   width: 25px;
-  height: 25px; }
+  height: 25px;
+  transition: all 0.3s linear 0s; }
   .heart-color:hover {
     opacity: 1;
     transition: all 0.3s linear 0s; }
@@ -97,22 +98,17 @@
   display: flex;
   width: 100%; }
 
-.menu-first-title {
-  font-family: 'shrikhand', 'sans serif';
-  font-size: 28px; }
-
 a {
   text-decoration: none;
   color: black; }
 
 /* MAIN */
 .arrow-left {
-  width: 100%;
+  left: 20px;
   display: flex;
   justify-content: left;
   position: absolute;
-  margin-top: 20px;
-  margin-left: 50px; }
+  margin-top: 20px; }
 
 .img-container {
   position: relative;
@@ -133,6 +129,10 @@ a {
   margin-bottom: 20px; }
 
 .menu-first-title {
+  width: 100%;
+  font-family: 'shrikhand', 'sans serif';
+  font-size: 28px;
+  font-weight: 400;
   margin-left: 20px; }
 
 .menu-second-title {
@@ -145,13 +145,22 @@ a {
   border-bottom: 2px solid var(--main-third-color);
   margin: 5px 0 5px 20px; }
 
+.card-icone-page {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding-right: 20px; }
+
 .card-menu {
   display: flex;
+  height: 72px;
   position: relative;
   background-color: white;
   border-radius: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 20px 10px 0 10px;
   cursor: pointer;
   overflow: hidden; }
@@ -165,7 +174,7 @@ a {
   overflow: hidden; }
 
 .card-menu-txt {
-  width: 80%;
+  width: 100%;
   margin-top: 0; }
 
 .card-menu-txt-desc {
@@ -176,7 +185,7 @@ a {
   white-space: nowrap; }
 
 .card-menu:hover .card-menu-txt-desc {
-  width: 70%; }
+  width: 60%; }
 
 .checkbox-container {
   width: 80px;
@@ -196,12 +205,14 @@ a {
 
 .card-menu-txt-price {
   position: absolute;
-  right: 20px;
+  right: 10px;
   height: 100%;
   display: flex;
   align-items: center;
   transition: right 1s, transform 1s;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-top: 25px;
+  padding-left: 5px; }
 
 .card-menu:hover .card-menu-txt-price {
   transform: translateX(-80px); }
@@ -399,7 +410,9 @@ h2 {
 
 h3 {
   width: 100%;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500; }
 
 .flex-center {
   display: flex;
@@ -474,6 +487,7 @@ h3 {
   font-weight: 500; }
 
 #search-icone {
+  color: #353535;
   margin-left: 40px;
   margin-right: 20px; }
 
@@ -510,11 +524,13 @@ button {
   border: none;
   background: var(--main-btn-color);
   border-radius: 25px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  transition: all 0.3s linear 0s; }
 
 button:hover {
   box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.67);
-  background: var(--main-btn-color-hover); }
+  background: var(--main-btn-color-hover);
+  transition: all 0.3s linear 0s; }
 
 /* MAIN - FUNCTIONING */
 .functioning {

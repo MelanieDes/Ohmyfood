@@ -39,7 +39,9 @@ h2 {
 
 h3 {
   width: 100%;
-  margin-bottom: 0; 
+  margin-bottom: 0;
+  font-size: 18px; 
+  font-weight: 500;
 }
 
 .flex-center {
@@ -129,6 +131,7 @@ h3 {
 }
 
 #search-icone {
+  color: #353535;
   margin-left: 40px;
   margin-right: 20px; 
 }
@@ -172,12 +175,13 @@ button {
   background: var(--main-btn-color);
   border-radius: 25px;
   margin-bottom: 50px; 
+  transition: all 0.3s linear 0s;
 }
 
 button:hover {
   box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.67);
   background: var(--main-btn-color-hover);
-   
+  transition: all 0.3s linear 0s;   
 }
 
 /* MAIN - FUNCTIONING */
