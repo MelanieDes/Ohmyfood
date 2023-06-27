@@ -1,13 +1,3 @@
-
-  :root {
-  --main-bg-color: #F6F6F6;
-  --main-first-color: #9356DC;
-  --main-second-color: #FF79DA;
-  --main-third-color: #99E2D0;
-  --main-linear-gradient: linear-gradient(30deg, #9356DC 20%, #FF79DA, #99E2D0 80%);
-  --main-btn-color: linear-gradient(#FF79DA, #9356DC);
-  --main-btn-color-hover: linear-gradient(rgb(255, 121, 218, 0.9), rgb(147, 86, 220, 0.9));}
-
 .header {
   display: flex;
   justify-content: center;
@@ -171,17 +161,22 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px !important; }
+  margin-top: 10px !important;
+  overflow: hidden; }
 
 .card-menu-txt {
-  width: 100%;
+  width: 80%;
   margin-top: 0; }
 
-.card-menu-txt .card-menu-txt-desc {
-  width: 60%;
+.card-menu-txt-desc {
+  width: 100%;
+  margin-top: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+.card-menu:hover .card-menu-txt-desc {
+  width: 70%; }
 
 .checkbox-container {
   width: 80px;
@@ -379,22 +374,30 @@ a {
     border-bottom-left-radius: 0; } }
 
 /* GENERAL */
+:root {
+  --main-bg-color: #F6F6F6;
+  --main-first-color: #9356DC;
+  --main-second-color: #FF79DA;
+  --main-third-color: #99E2D0;
+  --main-linear-gradient: linear-gradient(30deg, #9356DC 20%, #FF79DA, #99E2D0 80%);
+  --main-btn-color: linear-gradient(#FF79DA, #9356DC);
+  --main-btn-color-hover: linear-gradient(rgb(255, 121, 218, 0.9), rgb(147, 86, 220, 0.9)); }
 
 html, body {
   width: 100%; }
 
 body {
   font-family: 'Roboto', sans serif;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0; }
 
 p {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 300;
-  color: #000000; }
+  color: var(--main-color); }
 
 h2 {
-  color: #000000;
+  color: var(--main-color);
   padding-top: 50px;
   margin: 0 0 0 20px; }
 

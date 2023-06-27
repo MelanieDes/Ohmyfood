@@ -30,7 +30,6 @@ a {
     position: relative;
     height: 200px;
     z-index: -1;
-
 }
 
 .img-container img{
@@ -83,18 +82,24 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px!important;
+    overflow: hidden;
 }
 
 .card-menu-txt {
-    width: 100%;
+    width: 80%;
     margin-top: 0;
 }
 
-.card-menu-container:hover {
-    // width: 60%;
+.card-menu-txt-desc {
+    width: 100%;
+    margin-top: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.card-menu:hover .card-menu-txt-desc {
+    width: 70%;    
 }
 
 .checkbox-container { 

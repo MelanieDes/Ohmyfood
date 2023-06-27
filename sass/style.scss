@@ -21,18 +21,18 @@ html, body {
 
 body {
   font-family: 'Roboto', sans serif;
-  font-size: 18px; 
+  font-size: 16px; 
   margin: 0;
 }
 
 p {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 300;
   color: var(--main-color); 
 }
 
 h2 {
-  color: $main-color;
+  color: var(--main-color);
   padding-top: 50px;
   margin: 0 0 0 20px; 
 }
