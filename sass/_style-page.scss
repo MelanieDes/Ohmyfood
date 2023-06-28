@@ -102,11 +102,12 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    transition: all 1s ;
+    transition: all 0.5s ;
 }
 
 .card-menu:hover .card-menu-txt-desc {
-    width: 60%;  
+    width: 60%; 
+    transition: all 0.5s ;
 }
 
 .card-menu-txt-price {
