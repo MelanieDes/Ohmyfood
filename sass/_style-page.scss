@@ -82,15 +82,14 @@ a {
     margin: 20px 10px 0 10px;
     cursor: pointer; 
     overflow: hidden; 
+   
 }
 
 .card-menu-container {
     width: 100%;    
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 10px!important;
-    overflow: hidden;
 }
 
 .card-menu-txt {
@@ -99,22 +98,37 @@ a {
 }
 
 .card-menu-txt-desc {
-    width: 100%;
     margin-top: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: all 3s ;
 }
 
-// .card-menu:hover .card-menu-txt-desc {
+.card-menu:hover .card-menu-txt-desc {
     width: 60%;  
 }
 
-.checkbox-container { 
-    display: flex;
-    width: 80px;
+.card-menu-txt-price {
+    position: absolute;
+    right: 10px;
     height: 100%;
-    right: -80px;
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+    white-space: nowrap;
+    margin-top: 25px;
+    padding-left: 5px;
+}
+
+.card-menu:hover .card-menu-txt-price {
+    transform: translateX(-60px);
+}
+
+.checkbox-container { 
+    width: 60px;
+    height: 100%;
+    right: -60px;
     position: absolute;
     font-size: 20px;
     border-top-right-radius: 20px;
@@ -126,23 +140,7 @@ a {
 }
 
 .card-menu:hover .checkbox-container { 
-    transform: translateX(-80px);    
-}
-
-.card-menu-txt-price {
-    position: absolute;
-    right: 10px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: right 1s, transform 1s;
-    white-space: nowrap;
-    margin-top: 25px;
-    padding-left: 5px;
-}
-
-.card-menu:hover .card-menu-txt-price {
-    transform: translateX(-80px);
+    transform: translateX(-60px);    
 }
 
 .title-btn {
